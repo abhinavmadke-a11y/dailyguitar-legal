@@ -57,7 +57,7 @@ Privacy answers in App Store Connect.
 
 ## Contact
 
-Abhinav Madke, on behalf of 999 Online Inc. — abhinav.madke@999venturestudio.com
+Abhinav Madke, on behalf of 999 Venture Studio. — abhinav.madke@999venturestudio.com
 
 ---
 
