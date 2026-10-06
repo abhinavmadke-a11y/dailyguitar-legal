@@ -4,12 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Daily Guitar</title>
+
+<!--
+  This page used to be a second copy of the privacy policy, and a second copy
+  is a copy that drifts. It did: the app grew accounts, the copy on the Daily
+  Guitar site was updated, and this one went on saying "There are no accounts
+  and no advertising" for weeks. Two live privacy policies that disagree is
+  exactly the contradiction App Review reads a policy against the app to find.
+
+  So there is one policy now, on the site the app itself links to from its
+  sign-in notice, and this address redirects to it. **Do not paste the policy
+  text back in here** — the URL is what has to keep working, not the copy.
+
+  GitHub Pages serves static files and cannot send a 301, so this is a meta
+  refresh with a canonical link for crawlers and a real link in the body for
+  anybody the refresh does not move — a reviewer with a strict browser, a
+  text-mode client, or a bot. The link is the part that must never break.
+-->
+
+<link rel="canonical" href="https://dailyguitar-ten.vercel.app/privacy">
+<meta http-equiv="refresh" content="0; url=https://dailyguitar-ten.vercel.app/privacy">
+
 <style>
   :root { color-scheme: light dark; }
   body {
-    max-width: 720px;
+    max-width: 640px;
     margin: 0 auto;
-    padding: 40px 22px 80px;
+    padding: 56px 22px 80px;
     font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: #1a1a1a;
     background: #fff;
@@ -17,212 +38,24 @@
   @media (prefers-color-scheme: dark) {
     body { color: #e8e8e8; background: #141414; }
     a { color: #7db4ff; }
-    code { background: #262626; }
   }
-  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
-  h2 { font-size: 19px; margin: 34px 0 10px; }
-  .meta { color: #767676; font-size: 14px; margin: 0 0 28px; }
-  ul { padding-left: 22px; }
-  li { margin: 6px 0; }
-  code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
-  .callout {
-    border-left: 3px solid #6b8afd;
-    padding: 2px 0 2px 16px;
-    margin: 20px 0;
-  }
-  hr { border: 0; border-top: 1px solid currentColor; opacity: 0.18; margin: 40px 0 20px; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 14px; }
+  p { margin: 0 0 14px; }
+  .meta { color: #767676; font-size: 14px; }
+  a { word-break: break-word; }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p class="meta">Daily Guitar: Chords &amp; Lessons — last updated 7 October 2026</p>
+<h1>The Daily Guitar privacy policy has moved</h1>
 
-<p>Daily Guitar is published by <strong>999 Online Inc.</strong>, trading as
-<strong>999 Venture Studio</strong>, which owns the app and everything in it and is the data
-controller responsible for the information described below. The app is managed by
-Abhinav Madke.</p>
+<p>It now lives at
+<a href="https://dailyguitar-ten.vercel.app/privacy">dailyguitar-ten.vercel.app/privacy</a>,
+which is the copy the app links to. You should be sent there automatically.</p>
 
-<p>This policy explains what Daily Guitar does with your information. It is written to be
-read rather than skimmed past. "We" and "us" below mean 999 Online Inc.</p>
-
-<div class="callout">
-  <p><strong>The short version.</strong> The microphone is used to listen to your guitar while
-  you play, and that audio is never recorded, stored, or sent anywhere. You sign in with Google
-  or Apple so your progress follows you to a new phone, and you can delete your account and
-  everything in it from inside the app. There is no advertising, and we do not track you across
-  other companies' apps or websites.</p>
-</div>
-
-<h2>The microphone</h2>
-<p>Daily Guitar listens through your device's microphone so that lessons, chord practice, and
-the tuner can respond to what you play. This is the core of how the app works.</p>
-<ul>
-  <li>Audio is analysed <strong>on your device, in real time</strong>, and discarded
-  immediately.</li>
-  <li>Audio is <strong>never recorded to a file</strong>, never saved, and
-  <strong>never transmitted</strong> to us or to anyone else.</li>
-  <li>Nothing said or played near the device is retained after the moment it is heard.</li>
-  <li>The app only listens during lessons, practice, and the tuner. On a song from the library
-  the microphone is <strong>off until you turn it on</strong>, using the microphone button in
-  the song's own controls.</li>
-  <li>You can revoke microphone access at any time in your device settings, though the app
-  cannot listen to your playing without it.</li>
-</ul>
-
-<h2>Your account</h2>
-<p>Daily Guitar asks you to sign in with Google or with Apple so that your lessons, songs, and
-settings follow you to a new phone. From whichever of those you choose, we receive and
-store:</p>
-<ul>
-  <li>Your email address</li>
-  <li>Your name</li>
-  <li>The web address of your profile picture, where one is given</li>
-</ul>
-<p>We never see or store your password. If you sign in with Apple and choose to hide your email
-address, Apple gives us a relay address instead of your real one, and that is all we hold.</p>
-
-<h2>What we keep about your practice</h2>
-<p>Stored against your account so it survives a new phone:</p>
-<ul>
-  <li>Which lessons you have opened and finished, and how far through each one you were</li>
-  <li>Which chord shapes you have cleared</li>
-  <li>Which songs you have played along to, including the title, artist, and chords of the
-  recording</li>
-  <li>The answers you gave when you set the app up: whether you had a guitar to hand, why you
-  are learning, how long you have been playing, and the practice schedule you chose</li>
-</ul>
-<p>None of this is sold, shared, or used for advertising. It exists so the app can put you back
-where you left off and so your reminders arrive when you asked for them.</p>
-
-<h2>Practice reminders</h2>
-<p>If you ask for practice reminders, we store a notification token for your device and the
-schedule you picked, so that a reminder can be sent at the right time where you are. Reminders
-are delivered by <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer"
-target="_blank">Google Firebase Cloud Messaging</a>, acting as our processor.</p>
-<p>The time where you are comes from your device's own timezone setting. <strong>We do not use
-location services</strong>, and the app never asks for your location. Turning reminders off in
-the app, or notifications off in your device settings, stops them.</p>
-
-<h2>Information you choose to send us</h2>
-<p>If you use the support form inside the app to contact us, we receive what you enter:</p>
-<ul>
-  <li>Your name</li>
-  <li>Your email address</li>
-  <li>Your message</li>
-  <li>A screenshot or photo, only if you choose to attach one</li>
-</ul>
-<p>We use this solely to read your message, reproduce the problem you are describing, and reply
-to you. We do not use it for marketing, we do not add you to any mailing list, and we do not
-share it with anyone. The app asks for photo library access only at the moment you choose to
-attach something.</p>
-
-<h2>Talking to us on WhatsApp</h2>
-<p>The app has a <strong>Talk to us</strong> button that opens a conversation with us in
-WhatsApp. Tapping it hands you over to WhatsApp, and from that point
-<a href="https://www.whatsapp.com/legal/privacy-policy" rel="noopener noreferrer"
-target="_blank">WhatsApp's own privacy policy</a> applies to the conversation — including your
-phone number, which WhatsApp shows us and we never see any other way.</p>
-<p>Nothing is sent to us until you send it. If you would rather not use WhatsApp, the support
-form inside the app and the email address at the foot of this page reach the same people.</p>
-
-<h2>Understanding how the app is used</h2>
-<p>We use <a href="https://posthog.com/privacy" rel="noopener noreferrer" target="_blank">PostHog</a>
-to understand which parts of Daily Guitar are used and for how long — which screen is open, how
-long a session lasts, and how often the app is opened. This tells us which lessons people finish
-and which ones they give up on, which is how the teaching gets better.</p>
-<p>It is recorded against an identifier generated on your device when you install the app. That
-identifier is not joined to your account. We do <strong>not</strong> record your screen, and we
-do not use this information for advertising.</p>
-
-<h2>Crash and performance reports</h2>
-<p>When the app crashes or behaves badly, a diagnostic report is sent to
-<a href="https://sentry.io/privacy/" rel="noopener noreferrer" target="_blank">Sentry</a>,
-processed in the United States, so we can find and fix the fault. These reports describe the
-software, not you: the error and where in the code it happened, the app version, the device
-model, and the operating system version. They do not contain your name, your email, your
-location, or any audio.</p>
-
-<h2>The play-along videos</h2>
-<p>Songs are played along to using standard YouTube video embeds of publicly available
-recordings. We do not download, copy, or re-host any video or audio. When a video plays, YouTube
-receives that request directly from your device, and
-<a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's
-privacy policy</a> applies to it. We do not tell YouTube who you are.</p>
-
-<h2>What stays on your device</h2>
-<p>Some things are kept only on your phone and never sent to us, including your appearance and
-theme preference, whether you have completed the introduction, and whether you have switched the
-microphone on for songs. Deleting the app deletes these permanently; we have no copy and cannot
-restore them.</p>
-
-<h2>Who processes your data</h2>
-<ul>
-  <li><a href="https://supabase.com/privacy" rel="noopener noreferrer" target="_blank">Supabase</a>
-  — accounts, practice data, and support messages</li>
-  <li><a href="https://posthog.com/privacy" rel="noopener noreferrer" target="_blank">PostHog</a>
-  — understanding how the app is used</li>
-  <li><a href="https://sentry.io/privacy/" rel="noopener noreferrer" target="_blank">Sentry</a>
-  — crash and performance reports</li>
-  <li><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer"
-  target="_blank">Google Firebase</a> — delivering practice reminders</li>
-  <li>Google and Apple — signing you in, when you choose one of them</li>
-  <li><a href="https://www.whatsapp.com/legal/privacy-policy" rel="noopener noreferrer"
-  target="_blank">WhatsApp</a> — only if you use the Talk to us button</li>
-  <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer"
-  target="_blank">YouTube</a> — the play-along videos</li>
-</ul>
-
-<h2>What we do not do</h2>
-<ul>
-  <li>We do not show advertising.</li>
-  <li>We do not track you across other companies' apps or websites, and we do not use the
-  advertising identifier.</li>
-  <li>We do not sell, rent, or trade your information, and we do not share it with data
-  brokers.</li>
-  <li>We do not build advertising or marketing profiles about you.</li>
-  <li>We do not record audio, and we do not record your screen.</li>
-</ul>
-
-<h2>How long we keep things</h2>
-<p>Your account and the practice data attached to it are kept until you delete your account,
-after which they are removed. Support messages and any attached image are kept for as long as
-needed to resolve your issue and to keep a record of the conversation, and are deleted when no
-longer needed. Crash reports and usage data are retained by Sentry and PostHog for a limited
-period under their standard retention policies and then removed automatically.</p>
-
-<h2>Children</h2>
-<p>Daily Guitar is a general-audience app suitable for all ages. It is not directed at children
-under 13, and we do not knowingly collect personal information from children under 13. If you
-believe a child has given us their information, email us and we will delete it promptly.</p>
-
-<h2>Deleting your account</h2>
-<p>You can delete your account, and everything described above that is attached to it, from
-inside the app: <strong>Courses tab → your picture in the top right → Delete account</strong>.</p>
-<p>You will be asked to confirm twice, and then it is done and cannot be undone. If you would
-rather we did it for you, or you no longer have the app installed, email the address below and
-we will action it.</p>
-
-<h2>Your rights</h2>
-<p>You can ask us what information we hold about you, ask for it to be corrected, or ask for it
-to be deleted. Email us and we will action it. Depending on where you live you may also have the
-right to a copy of your information in a portable form, to object to how we use it, or to
-complain to your local data protection authority.</p>
-
-<h2>Changes to this policy</h2>
-<p>If this policy changes, the updated version will be posted at this address with a new date at
-the top. Material changes will also be noted in the app's release notes.</p>
-
-<h2>Contact</h2>
-<p>Questions, deletion requests, or anything else about privacy are handled by Abhinav Madke on
-behalf of 999 Online Inc.:
+<p class="meta">Daily Guitar: Chords &amp; Lessons is owned and operated by 999 Online Inc.,
+trading as 999 Venture Studio. Questions about privacy:
 <a href="mailto:abhinav.madke@999venturestudio.com">abhinav.madke@999venturestudio.com</a></p>
-
-<hr>
-
-<p style="font-size:14px">Daily Guitar: Chords &amp; Lessons is owned and operated by 999 Online
-Inc., trading as 999 Venture Studio. © 2026 999 Online Inc. All rights reserved. The app, its
-lessons, artwork, audio, and this policy are the copyright of 999 Online Inc.</p>
 
 </body>
 </html>
