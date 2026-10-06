@@ -43,21 +43,49 @@ When the privacy policy changes in a way that affects users, also update the "la
 at the top of `index.html`, and keep the App Privacy answers in App Store Connect consistent
 with it.
 
+## There are two copies of this policy, and they must not drift
+
+The same policy is published twice:
+
+| URL | Source |
+| --- | --- |
+| https://abhinavmadke-a11y.github.io/dailyguitar-legal/ | `legal/index.html` in the app repo, uploaded to the `dailyguitar-legal` repo |
+| https://dailyguitar-ten.vercel.app/privacy | `app/privacy/page.tsx` in the `dailyguitar-website` repo |
+
+Both were updated on 7 October 2026 and currently say the same thing. **Pick one
+for the store listings and keep the other pointing at it**, because two live
+privacy policies that disagree is exactly the contradiction App Review looks
+for — and they did disagree until this date, when the GitHub Pages copy still
+said the app had no accounts.
+
 ## Keeping it accurate
 
-The privacy policy describes the app's actual behaviour, which was verified against the source:
+The policy describes the app's actual behaviour, verified against the source on
+7 October 2026, and against `ios/Runner/PrivacyInfo.xcprivacy`, which is the
+machine-readable declaration Apple reads from inside the bundle. The two have to
+agree with each other **and** with the App Privacy answers in App Store Connect;
+`docs/app-store-release.md` is the script that keeps all three in step.
 
-- Microphone audio is analysed on-device and never recorded, stored, or transmitted.
-- Lesson progress, theme, and first-launch state are stored locally via `SharedPreferences`.
-- The only outbound data is the in-app support form (name, email, message, optional image) via
-  Supabase, and crash and performance reports via Sentry.
+- Microphone audio is analysed on-device and never recorded, stored, or
+  transmitted. On a song from the library the microphone is off by default.
+- Sign-in with Google or Apple, storing email, name, and avatar URL in
+  `profiles`.
+- Lesson progress, cleared chord shapes, song attempts, and the onboarding
+  answers sync to Supabase against the account.
+- A Firebase push token and a practice schedule, for reminders.
+- Usage analytics via PostHog, against an install-local identifier that is not
+  joined to the account. Session replay is **off**.
+- Crash and performance reports via Sentry, with `sendDefaultPii` left false.
+- Play-alongs are YouTube embeds; nothing is downloaded or re-hosted.
+- Account deletion from inside the app, through the `delete-account` Edge
+  Function.
 
-If any of that changes in the app, this policy has to change with it — and so may the App
-Privacy answers in App Store Connect.
+If any of that changes in the app, this policy, the website copy, the privacy
+manifest, and the App Store Connect answers all have to change with it.
 
 ## Contact
 
-Abhinav Madke, on behalf of 999 Venture Studio. — abhinav.madke@999venturestudio.com
+Abhinav Madke, on behalf of 999 Online Inc. — abhinav.madke@999venturestudio.com
 
 ---
 
